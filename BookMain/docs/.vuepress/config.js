@@ -7,7 +7,6 @@ module.exports = {
         locales:{
             '/':{
                 sidebar: [
-                    ['/Intro/Introduction', 'Introduction'],
                     {
                       title: 'Overview',
                       collapsable: true,
