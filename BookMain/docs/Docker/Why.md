@@ -43,4 +43,4 @@ Stackoverflow 上面有一個破千推的討論非常實用 [傳送門](https://
 自身理解是若以軍隊比喻，Docker 像是空軍，虛擬機像是陸軍&nbsp;  
 各有擅長的地方  
 
-![dockervsvm](../.vuepress/public/docker/whycontainervsvm.png)
+![dockervsvm](../.vuepress/public/docker/whycontainervsvm.png)  
