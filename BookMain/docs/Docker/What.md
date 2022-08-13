@@ -8,6 +8,12 @@
 
 * [Wiki Docker](https://zh.wikipedia.org/zh-tw/Docker)
 
+:closed_book:  **Notice**
+
+* Images = 鏡像 = 映像檔
+* Containers = 容器
+* Registry = 倉庫
+
 ## Docker 是什麼
 
 關於這點 Wiki 上面對於 Docker 的介紹，基本上足夠優秀了 [Wiki Docker](https://zh.wikipedia.org/zh-tw/Docker)  
@@ -65,8 +71,17 @@ Action | Git               | Docker
 
 ## Docker 基本
 
-* <font color="#63C5DA">**Image**</font>
+Docker 的三項之力  
+以下來自 Wiki 言簡意賅毫無吐槽點，真的寫得很好  
 
-* <font color="#63C5DA">**Container**</font>
+* <font color="#63C5DA">**Image**</font>  
 
-* <font color="#63C5DA">**Repository**</font>
+  一個唯讀模板，用於指示建立容器
+
+* <font color="#63C5DA">**Container**</font>  
+
+  是鏡像的可執行的實例，容器可通過API或CLI（命令列）進行操控
+
+* <font color="#63C5DA">**Registry**</font>  
+
+  Docker註冊中心(Docker registry)是用於儲存 Docker鏡像
