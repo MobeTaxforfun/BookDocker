@@ -4,6 +4,11 @@
 
 * 知道為什麼要使用 Docker
 
+:blue_book: **Reference**
+
+* [what-container](https://www.docker.com/resources/what-container/#/package_software)  
+* [how-is-docker-different-from-a-virtual-machine](https://stackoverflow.com/questions/16047306/how-is-docker-different-from-a-virtual-machine)
+
 ## 為什麼用 Docker
 
 自己使用過 Docker 後的心得，如果要濃縮成一句話來說就是  
