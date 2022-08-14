@@ -32,7 +32,16 @@
   ※ Docker Desktop on Linux 要注意一下支援的平台  
   ![Docker](../.vuepress/public/docker/desktoponlinux.png)  
 
-## Hello World
+* 實驗環境
+
+  * Windows10 Docker Desktop On WSL2
+  * Docker On Ubuntu (With Linode)  
+    Linux Ubuntu With Linode  
+    安裝步驟：  
+    `sudo apt-get update`  
+    `sudo apt-get install docker.io`  
+
+## docker version
 
 安裝後可以用 `docker version` 確定一下是否成功
 
@@ -46,8 +55,12 @@ docker version
 
 * Linux docker version
 
-  ![dockerversionwinlinux]()
+  ![dockerversionwinlinux](../.vuepress/public/docker/dockerversionlinux.png)
 
-```sh
-docker run hello-world
-```
+* :notebook: <font color="#008000">**補充 docker version**</font>  
+
+  其中有一行 `Experimental : false`  
+  這是有沒有開起還在實驗中功能的意思  
+  如果不要開啟可以去 Config 裡面更改設定  
+  在某個版本之後 Client 是預設開啟的  
+
