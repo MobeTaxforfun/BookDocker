@@ -20,7 +20,8 @@ module.exports = {
                       title: 'Image',
                       collapsable: true,
                       children: [
-                        ['/Image/Introduction', 'Docker Image 簡介']
+                        ['/Image/Introduction', 'Docker Image 簡介'],
+                        ['/Image/How', 'Docker Image 基本使用']
                       ]
                     },
                     {

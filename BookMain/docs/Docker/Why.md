@@ -13,6 +13,9 @@
 
 自己使用過 Docker 後的心得，如果要濃縮成一句話來說就是  
 <font color="#63C5DA" size="6">**「你的 Docker 真方便」**</font>  
+
+![meme01](../.vuepress/public/docker/meme01.jpg)  
+
 以開發程式為主的~~碼農~~工程師(我的)角度來看  
 假設今天開發的系統中用到的元件有  
   
