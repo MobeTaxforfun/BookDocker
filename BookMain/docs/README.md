@@ -28,10 +28,6 @@ console.log(" Build once, Run anywhere !");
 
 Thank you!
 
-## Mind Map Overview
-
-![MindMap](../docs/.vuepress/public/DockerMindMap.png)
-
 ## Todo
 
  - [ ] Mind Map

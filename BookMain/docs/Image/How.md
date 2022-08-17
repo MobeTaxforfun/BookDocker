@@ -16,12 +16,12 @@
 
 :closed_book:  **Notice**
 
-* 尚無
+* 以下環境為 Window 10
 
 :pencil2: **Quick Guide**  
 ![DockerimageGuide](../.vuepress/public/Image/ImageGuide.png)
 
-## Pull Image 拉取映像檔
+## 拉取
 
 如同 Git 從遠端倉庫拉取程式碼，Docker 則默認從 Docker hub 拉取映像檔  
 可以使用指令 `docker pull` 來進行映像檔拉取  
@@ -68,13 +68,14 @@ docker pull hello-world
 
   Docker 默認使用 https，如果要用 http 要去改設定
 
-## Search Image 搜索映像檔
+## 搜索
 
-可以使用指令搜尋 `docker search`
+使用指令搜尋 `docker search`
 
 ```sh
 docker search nginx
 ```
+
 ![imagesearch](../.vuepress/public/Image/imagesearch.png)
 
 我是GUI廢人所以通常上官網看 囧  
@@ -91,10 +92,58 @@ docker search nginx
 
 ![imagesearchhubtag](../.vuepress/public/Image/imagesearchhubtag.png)
 
-## Images 列出本地映像檔
+## 列出本地
 
-## Save And Load 匯出和匯入
+使用指令搜尋本地的映像檔 `docker images`  
+&nbsp;  
+&nbsp;  
 
-## RMI 移除映像檔
+```sh
+C:>docker images
+REPOSITORY                                      TAG       IMAGE ID       CREATED        SIZE
+bitnami/nginx                                   latest    b5c8aca1173f   2 days ago     101MB
+mobeloadbalanceweb                              latest    3a4b2c20cb36   3 weeks ago    231MB
+mobeloadbalanceweb                              dev       2e3a11311015   3 weeks ago    208MB
+nginx                                           latest    55f4b40fe486   7 weeks ago    142MB
+docker.elastic.co/elasticsearch/elasticsearch   7.17.1    515ab4fba870   5 months ago   618MB
+docker.elastic.co/beats/filebeat                7.17.1    7f2b5e7dd9ef   5 months ago   268MB
+docker.elastic.co/logstash/logstash             7.17.1    6867cdc68606   5 months ago   783MB
+docker.elastic.co/kibana/kibana                 7.17.1    8fbc840d074f   5 months ago   895MB
+```
 
-## History 映像檔歷史訊息
+## 匯出和匯入
+
+匯出 Image `docker save -o [檔案位置] [IMAGE...]`  
+匯入 Image `docker load -i [檔案位置]`  
+
+## 移除
+
+使用指令移除本地映像檔 `docker rmi [OPTIONS] IMAGE [IMAGE...]`  
+&nbsp;  
+&nbsp;  
+
+```sh
+C:>docker rmi redis
+Untagged: redis:latest
+Untagged: redis@sha256:9bc34afe08ca30ef179404318cdebe6430ceda35a4ebe4b67d10789b17bdf7c4
+Deleted: sha256:3e42dd4e79c7b6e416d06dde0de3e8b6cc73bf8f59dea9d3f784ac63cf4665a9
+Deleted: sha256:93776ad7e2c55350f03d3280a941f7e2a224b2f316ac55920482ae9e9c957af7
+...
+```
+
+## 歷史訊息
+
+使用指令查看本地映像檔建構歷史 `docker history [OPTIONS] IMAGE`  
+&nbsp;  
+&nbsp;  
+
+```sh
+C:>docker history redis
+IMAGE          CREATED       CREATED BY                                      SIZE      COMMENT
+3e42dd4e79c7   2 weeks ago   /bin/sh -c #(nop)  CMD ["redis-server"]         0B
+<missing>      2 weeks ago   /bin/sh -c #(nop)  EXPOSE 6379                  0B
+<missing>      2 weeks ago   /bin/sh -c #(nop)  ENTRYPOINT ["docker-entry…   0B
+<missing>      2 weeks ago   /bin/sh -c #(nop) COPY file:e873a0e3c13001b5…   661B
+<missing>      2 weeks ago   /bin/sh -c #(nop) WORKDIR /data                 0B
+...
+```

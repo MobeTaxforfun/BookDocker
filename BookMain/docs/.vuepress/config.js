@@ -7,6 +7,7 @@ module.exports = {
         locales:{
             '/':{
                 sidebar: [
+                    ['/QuickStart', 'Quick Start'],
                     {
                       title: 'Overview',
                       collapsable: true,
@@ -21,7 +22,9 @@ module.exports = {
                       collapsable: true,
                       children: [
                         ['/Image/Introduction', 'Docker Image 簡介'],
-                        ['/Image/How', 'Docker Image 基本使用']
+                        ['/Image/How', 'Docker Image 基本'],
+                        ['/Image/HowDockerfile', 'Dockerfile 基本'],
+                        ['/Image/HowDockerfile', 'Dockerfile 導讀']
                       ]
                     },
                     {
