@@ -37,15 +37,15 @@ CMD python /app/app.py
 比較常用的幾個如下：
 
 | 指令       | 說明                    |
-|------------|-------------------------|
-| FROM       |                         |
-| RUN        |                         |
-| ENTRYPOINT |                         |
-| CMD        |                         |
-| COPY       |                         |
-| ADD        |                         |
-| ENV        |                         |
-| EXPOSE     |                         |
-| WORKDIR    |                         |
+|------------|-----------------------|
+| FROM       | 引用基礎映像檔          |
+| RUN        | 執行命令                |
+| ENTRYPOINT | 啟動容器指令            |
+| CMD        | 啟動容器指令            |
+| COPY       | 複製檔案                |
+| ADD        | 添加檔案                |
+| ENV        | 設定環境變數            |
+| EXPOSE     | 設定映射 Port           |
+| WORKDIR    | 移動工作目錄            |
 | MAINTAINER | 已經棄用使用 label 取代 |
 
